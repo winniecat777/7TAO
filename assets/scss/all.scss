@@ -1,5 +1,8 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import "../../node_modules/bootstrap";
+
+@import '../icofont/icofont.min.css';
 
 
 @import './layout/header.scss';
@@ -8,4 +11,3 @@
 
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";
