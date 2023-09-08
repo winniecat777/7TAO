@@ -3,8 +3,9 @@
 @import "../../node_modules/bootstrap";
 
 @import '../icofont/icofont.min.css';
-@import '../scss/utils/font';
-@import '../scss/utils/base';
+@import './utils/font';
+@import './utils/base';
+@import './utils/mixin';
 
 
 @import './layout/header.scss';
