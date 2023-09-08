@@ -1,8 +1,19 @@
 .logo{
   width: 53px;
   height: 53px;
-  @include mobile {
+  // @include mobile {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+  @include media-breakpoint-down(md) {
     width: 40px;
     height: 40px;
+  }
+}
+
+.seachBar{
+  width: 335px;
+  @include media-breakpoint-down(md) {
+    width: 207px;
   }
 }

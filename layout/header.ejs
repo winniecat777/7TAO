@@ -1,13 +1,32 @@
 <nav class="navbar py-md-3 py-6 border-bottom border-3 border-md-2 border-primary">
     <div class="container">
         <div class="d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <a class="navbar-brand d-flex align-items-center me-1" href="index.html">
                 <img class="logo me-4" src="../assets/images/logo.png" alt="logo">
-                <h1>7TAO</h1>
+                <h1 class="fs-7 d-none d-md-block">7TAO</h1>
             </a>
+            <p class="fw-bold noto-tc-sans me-12 d-none d-md-block">活動訂票網</p>
+            <form class="seachBar d-flex" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control border border-2 border-primary py-md-2 py-4 ms-md-0 ps-3 ms-6" placeholder="探索活動" aria-label="searchName" aria-describedby="search">
+                    <button class="btn btn-primary text-secondary p-md-4 p-3" type="button" id="search"><i class="icofont-search-1"></i>
+                    </button>
+                </div>
+            </form>
         </div>
-        <div>
-
-        </div>
+        <ul class="d-lg-flex list-unstyled d-none">
+            <li>
+              <a href="#" class="pe-4 fs-3 text-primary link-secondary">
+                <i class="icofont-ui-file"></i>
+                REGISTER
+              </a>
+            </li>
+            <li>
+              <a href="member_login.html" class="fs-3 text-primary link-secondary">
+                <i class="icofont-ui-user"></i>
+                LOGIN
+              </a>
+            </li>
+          </ul>
     </div>
 </nav>
