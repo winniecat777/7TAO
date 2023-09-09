@@ -110,6 +110,29 @@
   }
 }
 
+.badge {
+  border: 1px solid $primary;
+  border-left-width: 4px;
+  font-family: 'Noto Serif TC' !important;
+  font-size: 16px;
+  color: $primary;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    padding-left: 1.5 * $spacer;
+    padding-right: 1.5 * $spacer;
+  }
+  &:hover {
+    border-left-color: $secondary;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    color: $white;
+    background-color: $primary;
+  }
+}
+
 .home-album__list .col-10 {
   &:first-child .home-album__item {
     &:hover {
