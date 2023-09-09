@@ -82,6 +82,13 @@
 .event-card{
   border: none;
   background: none;
+  &__img{
+    width: 100%;
+    height: 255px;
+    @include media-breakpoint-up(md) {
+      height: 210px;
+    }
+  }
 }
 
 .event-card__event-type:hover {
