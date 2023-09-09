@@ -3,3 +3,12 @@
     height: 40px;
     text-align: center;
   }
+
+  .event-card__title,.event-card__event-type{
+    font-weight: bold;
+    font-family: 'Noto Serif TC' !important;
+  }
+
+  .event-card__describe,.event-card__ticket-btn-text{
+    font-family: 'Noto Sans TC' !important;
+  }
