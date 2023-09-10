@@ -1255,7 +1255,7 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // $pagination-padding-y:              .375rem !default;
 $pagination-padding-y:              .5rem !default; //custom
 // $pagination-padding-x:              .75rem !default;
-$pagination-padding-x:              .9375rem !default; //custom
+$pagination-padding-x:              0rem !default; //custom
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1270,7 +1270,8 @@ $pagination-bg:                     #f3f1e5 !default;
 $pagination-border-radius:          $border-radius !default;
 $pagination-border-width:           $border-width !default;
 $pagination-margin-start:           ($pagination-border-width * -1) !default;
-$pagination-border-color:           $gray-300 !default;
+// $pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $primary !default; //custom
 
 // $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-color:            $secondary !default; //custom
