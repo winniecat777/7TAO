@@ -18,6 +18,11 @@
   }
 }
 
+::placeholder {
+  color:#878787 !important; 
+}
+
+
 .link-y-hover{
   &:hover {
     color: #9c9e18;
