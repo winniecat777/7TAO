@@ -1,4 +1,4 @@
-.home-banner {
+.banner {
   height: 350px;
   background-clip: padding-box;
   @include media-breakpoint-up(md) {
@@ -6,7 +6,7 @@
   }
 }
 
-.home-banner-carousell {
+.banner-carousell {
   .swiper-button-prev, .swiper-button-next {
     color: rgba(#fff, .3);
   }
@@ -16,7 +16,7 @@
   }
 }
 
-.home-banner-carousell- {
+.banner-carousell- {
   &1 {
     background-image: url("https://github.com/winniecat777/7TAO/blob/main/assets/images/event/13.jpg?raw=true");
   }
@@ -28,18 +28,18 @@
   }
 }
 
-.home-banner__top {
+.banner__top {
   max-width: 50%;
 }
 
-.home-category__list-item {
+.category__list-item {
   aspect-ratio: 1;
   &:hover {
     background-color: $secondary;
   }
 }
 
-.home-category__icon {
+.category__icon {
   width: 40px;
   height: auto;
   @include media-breakpoint-up(sm) {
@@ -56,7 +56,7 @@
   }
 }
 
-.home-online-event__img {
+.online-event__img {
   min-height: 317px;
   max-height: 351px;
   background-image: url("https://github.com/winniecat777/7TAO/blob/main/assets/images/event/online.jpg?raw=true");
@@ -69,7 +69,7 @@
   }
 }
 
-.home-marquee {
+.marquee {
   .swiper-wrapper {
     transition-timing-function: linear;
   }
@@ -125,8 +125,12 @@
   text-underline-offset: 3px;
 }
 
+.event-card__ticket-btn-text{
+  z-index: 1;
+}
+
 .event-card__ticket-btn:hover {
-  &:before {
+  &::before {
     content: '';
     border-radius: 100%;
     border-color: $secondary;
@@ -162,19 +166,19 @@
   }
 }
 
-.home-album__list .col-10 {
-  &:first-child .home-album__item {
+.album__list .col-10 {
+  &:first-child .album__item {
     &:hover {
       transform: rotate(-1deg);
     }
   }
-  &:nth-child(2n) .home-album__item {
+  &:nth-child(2n) .album__item {
     transform: rotate(2deg);
     &:hover {
       transform: rotate(3deg);
     }
   }
-  &:nth-child(3) .home-album__item {
+  &:nth-child(3) .album__item {
     transform: rotate(-2deg);
     &:hover {
       transform: rotate(-3deg);
@@ -182,43 +186,51 @@
   }
 }
 
-.home-album__item {
+.album__item {
+  width: 100%;
   &:hover {
     transition: transform .2s;
-    .home-album__item-img {
+    .album__item-img {
       transform: scale(.9);
     }
-    .home-album__item-tag {
+    .album__item-tag {
       transform: translate(-50%, -50%) rotate(0deg);
     }
   }
 }
 
-.home-album__item-img-wrap {
-  height: 267px;
-  max-height: 274px;
-}
-
-.home-album__item-img {
+.album__item-img-wrap {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 274px;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    height: 267px;
+  }
 }
 
-.home-album__item-title{
+.album__item-img {
+  width: 100%;
+  height: 274px;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    height: 267px;
+  }
+}
+
+.album__item-title{
   font-size: 18px;
   font-weight: bold;
   font-family: 'Noto Serif TC' !important;
 }
 
-.home-album__item-tag {
+.album__item-tag {
   font-weight: bold;
   font-family: 'Noto Serif TC' !important;
   transform: translate(-50%, -50%) rotate(-4deg);
 }
 
-.home-info__follow {
-  .home-info__title, .home-info__content {
+.info__follow {
+  .info__title, .info__content {
     @include media-breakpoint-up(lg) {
       border-right-width: 0 !important;
     }
