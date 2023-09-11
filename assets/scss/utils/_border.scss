@@ -3,20 +3,20 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .border#{$infix} { 
-      border: $border-width solid $border-color !important; 
+      border: $border-width solid $border-color ; 
     }
 
     .border#{$infix}-top {
-      border-top: $border-width solid $border-color !important;
+      border-top: $border-width solid $border-color ;
     }
     .border#{$infix}-end {
-      border-right: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color ;
     }
     .border#{$infix}-bottom {
-      border-bottom: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color ;
     }
     .border#{$infix}-start {
-      border-left: $border-width solid $border-color !important;
+      border-left: $border-width solid $border-color ;
     }
 
     .border#{$infix}-top-0 {
@@ -33,13 +33,13 @@
     }
 
     .border#{$infix}-x {
-      border-left: $border-width solid $border-color !important;
-      border-right: $border-width solid $border-color !important;
+      border-left: $border-width solid $border-color ;
+      border-right: $border-width solid $border-color ;
     }
 
     .border#{$infix}-y {
-      border-top: $border-width solid $border-color !important;
-      border-bottom: $border-width solid $border-color !important;
+      border-top: $border-width solid $border-color ;
+      border-bottom: $border-width solid $border-color ;
     }
   }
 }
