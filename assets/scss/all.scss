@@ -3,7 +3,7 @@
 @import "../../node_modules/bootstrap/scss/maps"; //引入 maps
 //因為bootstrap 5.2版本新增了 _maps.scss 檔案，導致需要額外再入這個檔案才會有變數$utilities-border-colors 的相關設定。
 
-@import './utils/utilities'; //custom text responsive: true,
+@import './utils/utilities'; //custom text & border responsive: true,
 
 @import "../../node_modules/bootstrap";
 
